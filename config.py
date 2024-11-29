@@ -6,4 +6,5 @@ config_settings = toml.loads(conf_file.read())
 @dataclass
 class Config:
     DISCORD_BOT_TOKEN = config_settings["DISCORD_BOT_TOKEN"]
+    TEST_GUILD_IDS = config_settings["TEST_GUILD_IDS"]
 conf_file.close()
